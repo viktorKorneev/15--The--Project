@@ -8,4 +8,55 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+header {
+  width: 1280px;
+  height: 60px;
+  box-shadow: 0 1px 3px 0 rgba(11, 12, 13, 0.16), 0 0 1px 0 rgba(11, 12, 13, 0.24);
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 64px;
+}
+
+.count-notes {
+  padding: 18px 64px 18px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    color: #000;
+}
+
+.total-notes {
+  font-weight: 700;
+}
+
+.filter-box {
+  text-align: right;
+  margin: 24px 64px 0px 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #000;
+}
+
+.not-notes {
+  margin: 0px;
+  /* padding-top: 90px; */
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
+

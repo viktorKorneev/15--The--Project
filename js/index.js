@@ -146,7 +146,7 @@ const view = {
     for (let i = 0; i < notes.length; i++) {
       const note = notes[i];
       notesHTML += `<div class="div-list">
-      <li id="${note.id}" class="${note.isFavorite ? "favorite" : ""}">
+                  <li id="${note.id}" class="${note.isFavorite ? "favorite" : ""}">
                      <div class="div-title" style="background-color: ${note.color}">
                           <span>${note.title}</span>  
                         <div class="div-logo"> 
@@ -165,7 +165,7 @@ const view = {
     const notNotes = document.querySelector(".not-notes");
     if (notes.length === 0) {
       let notNotesHTML = "";
-      notNotesHTML += `<p>У вас нет еще ни одной заметки</br>Заполните поля выше и создайте свою первую заметку!</p>`;
+      notNotesHTML += `<p style="padding-top: 90px">У вас нет еще ни одной заметки</br>Заполните поля выше и создайте свою первую заметку!</p>`;
       notNotes.innerHTML = notNotesHTML;
     } else {
       notNotes.innerHTML = "";

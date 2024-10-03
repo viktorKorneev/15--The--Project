@@ -6,55 +6,93 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/notes.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Project-Notes</title>
   </head>
   <body>
     <div id="app"></div>
     <header class="header">
-      <h1>Заметки</h1>
+      <img class="logo" src="images/📝Notes.png" alt="" />
       <div class="total-notes-logo">
-        <img src="" alt="">
-        <span>Всего заметок: <span class="total-notes"></span></span>
+        <span class="count-notes"
+          >Всего заметок: <span class="total-notes"></span
+        ></span>
       </div>
     </header>
     <main>
       <form class="note-form" name="notes">
-        <!-- Ваш код -->
-        <label
-          >Название заметки
-          <input
-            class="input-title"
-            type="text"
-            placeholder="Введите название заметки"
-          />
-        </label>
-        <label for="note-description"> Описание заметки </label>
-        <textarea
-          id="note-description"
-          class="input-description"
-          placeholder="Введите описание заметки"
-        ></textarea>
-        <fieldset class="fieldset">
-            <legend class="label">Выберите цвет заметки</legend>
-            <ul class="radio-list">
-              <li>
-                <input checked class="radio" type="radio" name="color" value="yellow" aria-label="yellow" />
-              </li>
-              <li>
-                <input class="radio" type="radio" name="color" value="red" aria-label="red" />
-              </li>
-              <li>
-                <input class="radio" type="radio" name="color" value="green" aria-label="green" />
-              </li>
-              <li>
-                <input class="radio" type="radio" name="color" value="blue" aria-label="blue" />
-              </li>
-              <li>
-                <input class="radio" type="radio" name="color" value="purple" aria-label="purple" />
-              </li>
-            </ul>
-          </fieldset>
-        <button type="submit">Добавить заметку</button>
+          <div class="name-note">
+            <p>Название заметки</p>
+            <input class="input-title" type="text" placeholder="Напишите название новой заметки..."/>
+          </div>
+          <div class="title-description">
+            <div class="description">
+              <p>Описание новой заметки</p>
+              <textarea id="note-description" class="input-description" placeholder="Введите описание заметки"></textarea>
+            </div>
+            <div class="select-color">
+              <fieldset class="fieldset">
+                <legend class="label">Выберите цвет заметки</legend>
+                <ul class="radio-list">
+                  <li>
+                    <input
+                      checked
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="yellow"
+                      aria-label="yellow"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="red"
+                      aria-label="red"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="green"
+                      aria-label="green"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="blue"
+                      aria-label="blue"
+                    />
+                  </li>
+                  <li>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="color"
+                      value="purple"
+                      aria-label="purple"
+                    />
+                  </li>
+                </ul>
+              </fieldset>
+              <div class="button">
+                <button type="submit">
+                  <img class="button-plus" src="images/icons/plus-svgrepo-com 1 (1).svg" alt="">
+                  Добавить заметку</button>
+              </div>
+            </div>
+        </div>
+          
       </form>
       <div class="not-notes">
         <!-- Сюда будет рендерится сообщение если нет ни одной заметки из JavaScript -->
@@ -65,7 +103,7 @@
       <ul class="notes-list">
         <!-- Сюда будут рендерится заметки из JavaScript -->
       </ul>
-      
+
       <div class="messages-box">
         <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
       </div>

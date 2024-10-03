@@ -1,3 +1,92 @@
+.note-form {
+border-radius: 4px;
+margin: 24px 64px 0px 64px;
+padding: 24px;
+width: 1152px;
+height: 228px;
+box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+background: #fff;
+}
+
+.name-note > p {
+ margin: 0px;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 2;
+ color: #919191;
+}
+
+.input-title {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 6px 12px;
+  width: 344px;
+  height: 36px; 
+}
+
+.title-description {
+  margin: 0px;
+  width: 1104px;
+  height: 108px;
+  display: flex;
+}
+
+.description {
+  padding-top: 16px;
+}
+
+.description > p {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #919191;
+}
+
+.input-description {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 6px 12px;
+  width: 848px;
+  height: 84px;
+  resize: none
+}
+
+.input-title,
+.input-description::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #919191;
+}
+
+.button > button {
+  border-radius: 10px;
+padding: 6px 24px;
+width: 232px;
+height: 36px;
+background: #457cdc;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: #fff;
+border: #457cdc;
+font-family: "Montserrat", sans-serif;
+display: flex;
+align-items: center;
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+.button > button:active {
+  transform: scale(0.9);
+}
+
+.button-plus {
+  padding-right: 8px;
+}
+
 fieldset {
     all: unset;
   }
