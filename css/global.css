@@ -23,6 +23,14 @@ header {
   align-items: center;
 }
 
+.total-notes-logo {
+  display: flex;
+}
+
+.icon {
+ padding-top: 17px;
+}
+
 .logo {
   padding-left: 64px;
 }
@@ -35,6 +43,8 @@ header {
     text-align: right;
     color: #000;
 }
+
+
 
 .total-notes {
   font-weight: 700;

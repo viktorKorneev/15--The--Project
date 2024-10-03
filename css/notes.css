@@ -25,8 +25,39 @@ display: flex;
 justify-content: space-between;
 }
 
-.div-content {
-    padding: 0px 12px;
+.title-note {
+margin: 0px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: #292515;
 }
 
+.div-content {
+    padding: 0px 12px;
+    white-space: normal;
+    word-wrap: break-word;
+}
 
+.div-logo {
+    padding-top: 5px;
+}
+
+.favorite-icon {
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+/* .messages-box {
+    display: flex;
+    justify-content: right;
+    border: 1px solid black;
+    height: 48;
+    width: 368px;
+    border-radius: 10px;
+    background-color: blue;
+} */

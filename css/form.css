@@ -61,22 +61,28 @@ background: #fff;
   color: #919191;
 }
 
+.select-color {
+  padding: 0px 24px 0px 24px;
+  width: 232px;
+  height: 108px;
+}
+
 .button > button {
   border-radius: 10px;
-padding: 6px 24px;
-width: 232px;
-height: 36px;
-background: #457cdc;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-color: #fff;
-border: #457cdc;
-font-family: "Montserrat", sans-serif;
-display: flex;
-align-items: center;
-cursor: pointer;
-transition: transform 0.2s;
+  padding: 6px 24px;
+  width: 232px;
+  height: 36px;
+  background: #457cdc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border: #457cdc;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .button > button:active {
@@ -85,6 +91,14 @@ transition: transform 0.2s;
 
 .button-plus {
   padding-right: 8px;
+}
+
+.label {
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #919191;
 }
 
 fieldset {

@@ -15,11 +15,12 @@
   <body>
     <div id="app"></div>
     <header class="header">
-      <img class="logo" src="images/📝Notes.png" alt="" />
+      <img class="logo" src="images/📝Notes.png" alt="logo" />
       <div class="total-notes-logo">
-        <span class="count-notes"
-          >Всего заметок: <span class="total-notes"></span
-        ></span>
+        <div class="icon">
+          <img src="images/icons/notes (1).svg">
+        </div>
+          <span class="count-notes">Всего заметок: <span class="total-notes"></span></span>
       </div>
     </header>
     <main>
@@ -31,7 +32,7 @@
           <div class="title-description">
             <div class="description">
               <p>Описание новой заметки</p>
-              <textarea id="note-description" class="input-description" placeholder="Введите описание заметки"></textarea>
+              <textarea id="note-description" class="input-description" placeholder="Введите описание заметки..."></textarea>
             </div>
             <div class="select-color">
               <fieldset class="fieldset">
@@ -108,6 +109,8 @@
         <!-- Сюда будут рендерится информационные сообщения из JavaScript -->
       </div>
     </main>
-    <script src="js/index.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
   </body>
 </html>
