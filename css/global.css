@@ -23,6 +23,14 @@ header {
   align-items: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1152px;
+  margin: 24px 64px 0px 64px;
+}
+
 .total-notes-logo {
   display: flex;
 }
@@ -52,7 +60,7 @@ header {
 
 .filter-box {
   text-align: right;
-  margin: 24px 64px 0px 0px;
+  margin-top: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -70,3 +78,6 @@ header {
   color: #000;
 }
 
+/* .none {
+   padding-top: 90px;
+} */

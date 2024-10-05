@@ -1,7 +1,7 @@
 .notes-list {
 width: 1152px;
 height: 456px;
-margin: 0px 64px;
+margin-top: 12px;
 padding: 0px;
 display: flex;
 flex-wrap: wrap;
@@ -52,12 +52,26 @@ color: #292515;
     cursor: pointer;
 }
 
-/* .messages-box {
+.messages-box {
+    position: fixed;
+    right: 287px;
+    /* left: auto; */
+    margin-top: 288px;
     display: flex;
-    justify-content: right;
-    border: 1px solid black;
-    height: 48;
-    width: 368px;
+    gap: 10px;
+    align-items: center;
+    height: 48px;
     border-radius: 10px;
-    background-color: blue;
-} */
+    padding: 12px 24px;
+    color: #fff;
+    --color-success: #47B27D;
+    --color-error: #F23D5B;
+}
+
+.messages-box.success {
+    background-color: var(--color-success);
+}
+
+.messages-box.error {
+    background-color: var(--color-error);
+}

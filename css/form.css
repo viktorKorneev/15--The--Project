@@ -1,6 +1,6 @@
 .note-form {
 border-radius: 4px;
-margin: 24px 64px 0px 64px;
+/* margin: 24px 64px 0px 64px; */
 padding: 24px;
 width: 1152px;
 height: 228px;
@@ -61,6 +61,7 @@ background: #fff;
   color: #919191;
 }
 
+
 .select-color {
   padding: 0px 24px 0px 24px;
   width: 232px;
@@ -94,7 +95,6 @@ background: #fff;
 }
 
 .label {
-  
   font-weight: 400;
   font-size: 12px;
   line-height: 2;

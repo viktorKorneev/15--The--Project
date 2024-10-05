@@ -65,7 +65,7 @@ const view = {
       const notNotes = document.querySelector(".not-notes");  //❗Обработка отсутствия заметок 
       if (notes.length === 0) {                               // Если заметок нет, отображает сообщение о том, что заметок нет.    
         let notNotesHTML = "";
-        notNotesHTML += `<p style="padding-top: 90px">У вас нет еще ни одной заметки</br>Заполните поля выше и создайте свою первую заметку!</p>`;
+        notNotesHTML += `<p style="padding-top: 148px">У вас нет еще ни одной заметки</br>Заполните поля выше и создайте свою первую заметку!</p>`;
         notNotes.innerHTML = notNotesHTML;
       } else {
         notNotes.innerHTML = "";
@@ -99,7 +99,9 @@ const view = {
     },
     showMessage(message, isFavorite = false) {                // ❗Отображает сообщение пользователю. Если сообщение связано с 
       const messageNote = document.querySelector(".messages-box"); // избранным, оно отображается как ошибка, иначе как успех.
-      messageNote.textContent = message;
+      messageHTML = "";
+      messageHTML +=`<img src="images/icons/${isFavorite ? "warning" : "Done"}.png" alt=""><span class="message">${message}</span>`
+      messageNote.innerHTML = messageHTML;
       if(isFavorite) {
         messageNote.classList.remove("success")
         messageNote.classList.add("error")
@@ -114,3 +116,20 @@ const view = {
       
     },
   };
+
+  // showMessage(message, isFavorite = false) {                // ❗Отображает сообщение пользователю. Если сообщение связано с 
+  //   const messageNote = document.querySelector(".messages-box"); // избранным, оно отображается как ошибка, иначе как успех.
+  //   messageNote.textContent = message;
+  //   if(isFavorite) {
+  //     messageNote.classList.remove("success")
+  //     messageNote.classList.add("error")
+  //     } else {
+  //     messageNote.classList.remove('error')
+  //     messageNote.classList.add('success')
+  //     setTimeout(() => {
+  //       messageNote.textContent = "";
+  //       messageNote.classList.remove("success", "error");
+  //   }, 3000);
+  //   }
+    
+  // },
