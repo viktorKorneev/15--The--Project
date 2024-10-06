@@ -13,7 +13,7 @@ const view = {
         // передаем данные в контроллер
         const title = input.value;
         const content = textarea.value;
-        const color = document.querySelector('input[name="color"]:checked').value;
+        const color = document.querySelector('input[name=color]:checked').value;
         if (title.length <= 50){
           radioList.value = "";
           input.value = "";
@@ -38,6 +38,7 @@ const view = {
         
       
       });
+      
   
     },
     renderNotes(notes) {                                  //❗ Находит контейнер для заметок и рендерит заметки в него. 
@@ -116,20 +117,3 @@ const view = {
       
     },
   };
-
-  // showMessage(message, isFavorite = false) {                // ❗Отображает сообщение пользователю. Если сообщение связано с 
-  //   const messageNote = document.querySelector(".messages-box"); // избранным, оно отображается как ошибка, иначе как успех.
-  //   messageNote.textContent = message;
-  //   if(isFavorite) {
-  //     messageNote.classList.remove("success")
-  //     messageNote.classList.add("error")
-  //     } else {
-  //     messageNote.classList.remove('error')
-  //     messageNote.classList.add('success')
-  //     setTimeout(() => {
-  //       messageNote.textContent = "";
-  //       messageNote.classList.remove("success", "error");
-  //   }, 3000);
-  //   }
-    
-  // },
