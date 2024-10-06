@@ -1,8 +1,9 @@
 .note-form {
+width: 100%;
+max-width: 1152px;
 border-radius: 4px;
 /* margin: 24px 64px 0px 64px; */
 padding: 24px;
-width: 1152px;
 height: 228px;
 box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
 background: #fff;
@@ -25,8 +26,9 @@ background: #fff;
 }
 
 .title-description {
+  width: 100%;
+  max-width: 1104px;
   margin: 0px;
-  width: 1104px;
   height: 108px;
   display: flex;
 }
@@ -44,10 +46,10 @@ background: #fff;
 }
 
 .input-description {
+  width: 848px;
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   padding: 6px 12px;
-  width: 848px;
   height: 84px;
   resize: none
 }

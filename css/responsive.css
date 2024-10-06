@@ -1,4 +1,8 @@
 @media screen and  (max-width: 375px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
     #app {
         display: flex;
         flex-direction: column;
@@ -12,11 +16,9 @@
         justify-content: space-between;
         height: 40px; 
         padding: 10px; 
-       
-        /* align-items: center; */
       }
 
-      .logo {
+    .logo {
         padding: 0px;
       }
 
@@ -29,6 +31,28 @@
         padding-left: 190px;
     }
 
-   
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .note-form {
+        padding-top: 5px;
+    }
+
+   .title-description {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .input-description {
+    width: 300px;
+    height: 40px;
+   } 
+
+   .input-title {
+    width: 300px;
+    height: 30px;
+   }
 }
 
