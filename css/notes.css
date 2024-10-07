@@ -59,9 +59,9 @@ color: #292515;
 
 .messages-box {
     position: fixed;
-    right: 380px;
-    /* left: auto; */
+    /* right: 380px; */
     margin-top: 288px;
+    margin-left: 910px;
     display: flex;
     gap: 10px;
     align-items: center;

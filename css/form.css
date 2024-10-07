@@ -51,7 +51,10 @@ background: #fff;
   border-radius: 10px;
   padding: 6px 12px;
   height: 84px;
-  resize: none
+  resize: none;
+  color: #919191;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-title,

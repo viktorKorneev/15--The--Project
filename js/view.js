@@ -109,14 +109,14 @@ const view = {
         } else {
         messageNote.classList.remove('error')
         messageNote.classList.add('success')
-        setTimeout(() => {
-          messageNote.textContent = "";
-          messageNote.classList.remove("success", "error");
-      }, 3000);
+      //   setTimeout(() => {
+      //     messageNote.textContent = "";
+      //     messageNote.classList.remove("success", "error");
+      // }, 3000);
       }
-    //   setTimeout(() => {
-    //     messageNote.textContent = "";
-    //     messageNote.classList.remove("success", "error");
-    // }, 3000);
+      setTimeout(() => {
+        messageNote.textContent = "";
+        messageNote.classList.remove("success", "error");
+    }, 3000);
     },
   };
