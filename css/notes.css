@@ -1,7 +1,7 @@
 .notes-list {
 width: 100%;
 max-width: 1152px;
-height: 456px;
+/* height: 456px; */
 margin-top: 12px;
 padding: 0px;
 display: flex;
@@ -13,9 +13,10 @@ gap: 24px;
 border-radius: 10px;
 width: 100%;
 max-width: 368px;
-height: 200px;
+min-height: 150px;
 box-shadow: 0 4px 8px 0 rgba(11, 12, 13, 0.08), 0 8px 16px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
 list-style: none;
+word-wrap: break-word;
 }
 
 .div-title {
@@ -60,7 +61,7 @@ color: #292515;
 .messages-box {
     position: fixed;
     /* right: 380px; */
-    margin-top: 288px;
+    margin-top: 588px;
     margin-left: 910px;
     display: flex;
     gap: 10px;
